@@ -350,3 +350,60 @@ header {
     font-family: var(--secondary-font);
     color: var(--text-third-color);
 }
+
+/* -------------------
+    Sponsors Styles
+---------------------- */
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 50px;
+    margin-bottom: 130px;
+}
+
+.sponsor-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.sponsor-title h3 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--text-primary-color);
+}
+
+.sponsor-title p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    color: var(--text-third-color);
+}
+
+.sponsor-logo {
+    display: flex;
+    gap: 124px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------
+    Footer Styles 
+--------------------*/
+footer {
+    background-color: var(--secondary-color);
+}
+
+.footer-text {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    color: var(--text-secondary-color);
+}
