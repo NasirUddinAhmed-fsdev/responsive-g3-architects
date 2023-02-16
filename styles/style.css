@@ -1,0 +1,66 @@
+/* ----------------
+    Font Styles
+-------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+
+/* --------------
+    Root Styles
+----------------- */
+:root {
+    --primary-color: #0090F1;
+    --secondary-color: #E0EFFF;
+    --text-primary-color: #131313;
+    --text-secondary-color: #424242;
+    --text-third-color: #727272;
+    --primary-font: 'Manrope', sans-serif;
+    --secondary-font: 'Comfortaa', cursive;
+}
+
+/* -----------------
+    Global Styles
+--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- 
+    Navbar Styles
+--------------------*/
+header {
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    color: var(--text-primary-color);
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    color: var(--text-secondary-color);
+}
