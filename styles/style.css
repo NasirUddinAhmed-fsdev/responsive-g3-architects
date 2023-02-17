@@ -9,7 +9,8 @@
 ----------------- */
 :root {
     --primary-color: #0090F1;
-    --secondary-color: #E0EFFF;
+    --secondary-color: rgba(14, 179, 255, 0.1);
+    --alternate-color: #E8F7FF;
     --text-primary-color: #131313;
     --text-secondary-color: #424242;
     --text-third-color: #727272;
@@ -292,8 +293,6 @@ header {
 .facts-text {
     display: flex;
     flex-direction: column;
-    /* justify-content: start;
-    align-items: flex-start; */
     gap: 24px;
     width: 75%;
     margin: auto;
@@ -396,14 +395,198 @@ header {
     Footer Styles 
 --------------------*/
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--alternate-color);
 }
 
 .footer-text {
     text-align: center;
     padding: 40px 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     color: var(--text-secondary-color);
+}
+
+.footer-text p {
+    padding: 0 16px;
+}
+
+/* Mobile Device Responsive */
+@media only screen and (max-width: 576px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+    }
+
+    .nav-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 16px;
+        padding-top: 28px;
+    }
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav-items ul li a {
+        font-size: 14px;
+    }
+
+    .intro-container {
+        margin-top: 50px;
+    }
+
+    .title-text {
+        width: 100%;
+    }
+
+    .title-text h3 {
+        font-size: 40px;
+    }
+
+    .title-text p {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .banner-container div img {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .feature-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .feature-content {
+        text-align: center;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .feature-content h3 {
+        font-size: 32px;
+    }
+
+    .feature-content p {
+        font-size: 16px;
+    }
+
+    .feature-text {
+        gap: 16px;
+    }
+
+    .second-feature-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 16px;
+    }
+
+    .text-box-container {
+        width: 100%;
+    }
+
+    .title-box h3 {
+        font-size: 32px;
+    }
+
+    .single-image img {
+        width: 100%;
+    }
+
+    .button {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .btn-unique {
+        font-size: 40px;
+    }
+
+    .button .small {
+        font-size: 20px;
+    }
+
+    .facts-container {
+        gap: 50px;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    .facts-text {
+        width: 100%;
+    }
+
+    .facts-text h3 {
+        font-size: 32px;
+    }
+
+    .icon-box {
+        flex-direction: column-reverse;
+        gap: 64px;
+    }
+
+    .icon-box div {
+        width: 100%;
+        height: 100%;
+        padding: 16px 16px;
+    }
+
+    .icon-box div img {
+        padding-bottom: 10px;
+    }
+
+    .icon-box div h3 {
+        font-size: 32px;
+    }
+
+    .icon-box div p {
+        font-size: 16px;
+    }
+
+    .sponsors {
+        grid-row-gap: 32px;
+        margin-bottom: 130px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .sponsor-title h3 {
+        font-size: 32px;
+    }
+
+    .sponsor-logo {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .footer-text {
+        padding: 20px 0;
+        font-size: 16px;
+    }
 }
